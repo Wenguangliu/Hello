@@ -1,0 +1,18 @@
+"Reference Range:"
+"Sample #:"
+"Disc Lot #:
+"Operator #:
+"Alt. Samp. #:
+"Serial #:"
+"Inst QC: OK    Chem QC: OK"
+"Hem %-2.2s,  Lip %-2.2s,  Ict %"
+"* Troubleshooting Report *"
+"QC:"
+"* Quality Control Report *"
+"Reference Range:"
+"Instrument QC"
+"Level 1       Level 2"
+"IQC"
+"Range 90-110        95-105"
+"Chemistry QC:"
+"Acceptable Minimum:"

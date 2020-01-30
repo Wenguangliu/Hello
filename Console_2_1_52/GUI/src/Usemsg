@@ -1,0 +1,5 @@
+%C - GUI for the Picollo+/Vetscan2 instrument.
+%C [options]
+
+Options:
+  -c     Enable mouse cursor (default is disabled)
