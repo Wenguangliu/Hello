@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL7 configuration file name -->
+<FileName>
+  <Version>1</Version>
+  <Records>
+    <indexField>
+      <tIndex>3</tIndex>
+    </indexField>
+    <fileNameField>
+      <index>0</index>
+      <fileName>hl7Configuration.xml</fileName>
+      <displayText>Generic HL7</displayText>
+      <index>1</index>
+      <fileName>hl7EpicConfiguration.xml</fileName>
+      <displayText>EPIC HL7</displayText>
+      <index>2</index>
+      <fileName>hl7EpicConfiguration.xml</fileName>
+      <displayText>Parctice Fusion HL7</displayText>
+    </fileNameField>
+  </Records>
+<Signature>0</Signature>
+</FileName>
+
+
+
