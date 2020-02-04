@@ -1,0 +1,72 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Layouts.Layout_Calc_L"
+	d:DesignWidth="240" d:DesignHeight="160" FontSize="15">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.333*"/>
+			<RowDefinition Height="0.333*"/>
+			<RowDefinition Height="0.333*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.11*"/>
+			<ColumnDefinition Width="0.11*"/>
+			<ColumnDefinition Width="0.11*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+			<ColumnDefinition Width="0.08*"/>
+		</Grid.ColumnDefinitions>
+		
+		<r:CalcDisplay x:Name="CalcDisplay" Margin="2" Grid.ColumnSpan="3"/>
+
+		<r:KeyCalc x:Name="Calc_C" Content="C" Grid.Column="0" Grid.Row="1"/>
+		<r:KeyCalc x:Name="Calc_CE" Content="CE" Grid.Column="1" Grid.Row="1"/>
+		<r:KeyCalc x:Name="Calc_Back" Grid.Column="2" Grid.Row="1">
+			<Image Source="Images\Back.png" Stretch="None"/>
+		</r:KeyCalc>
+		
+		<r:KeyFuncTxt x:Name="Layout_Text" Content="ABC" Grid.Column="0" Grid.Row="2"/>
+		<r:KeyFuncTxt x:Name="Layout_Num" Content="?123" Grid.Column="1" Grid.Row="2"/>
+		<r:KeyFuncTxt x:Name="Calc_Write" Content="Write" Grid.Column="2" Grid.Row="2"/>
+		
+		<r:SimpleKey x:Name="Calc_7" Content="7" Grid.Column="3" Grid.Row="0"/>
+		<r:SimpleKey x:Name="Calc_8" Content="8" Grid.Column="4" Grid.Row="0"/>
+		<r:SimpleKey x:Name="Calc_9" Content="9" Grid.Column="5" Grid.Row="0"/>
+		
+		<r:SimpleKey x:Name="Calc_4" Content="4" Grid.Column="3" Grid.Row="1"/>
+		<r:SimpleKey x:Name="Calc_5" Content="5" Grid.Column="4" Grid.Row="1"/>
+		<r:SimpleKey x:Name="Calc_6" Content="6" Grid.Column="5" Grid.Row="1"/>
+		
+		<r:SimpleKey x:Name="Calc_1" Content="1" Grid.Column="3" Grid.Row="2"/>
+		<r:SimpleKey x:Name="Calc_2" Content="2" Grid.Column="4" Grid.Row="2"/>
+		<r:SimpleKey x:Name="Calc_3" Content="3" Grid.Column="5" Grid.Row="2"/>
+		
+		<r:SimpleKey x:Name="Calc_Sign" Content="+/-" Grid.Column="6" Grid.Row="0"/>
+		<r:SimpleKey x:Name="Calc_0" Content="0" Grid.Column="6" Grid.Row="1"/>
+		<r:SimpleKey x:Name="Calc_Decimal" Content="." Grid.Column="6" Grid.Row="2"/>
+		
+		<r:KeyCalc x:Name="Calc_MS" Content="MS" Grid.Column="7" Grid.Row="0"/>
+		<r:KeyCalc x:Name="Calc_MPlus" Content="M+" Grid.Column="8" Grid.Row="0"/>
+		<r:KeyCalc x:Name="Calc_MC" Content="MC" Grid.Column="9" Grid.Row="0"/>
+		<r:KeyCalc x:Name="Calc_MR" Content="MR" Grid.Column="10" Grid.Row="0"/>
+		
+		<r:KeyCalc x:Name="Calc_Plus" Content="+" Grid.Column="7" Grid.Row="1"/>
+		<r:KeyCalc x:Name="Calc_Minus" Content="-" Grid.Column="8" Grid.Row="1"/>
+		<r:KeyCalc x:Name="Calc_Multiply" Content="*" Grid.Column="9" Grid.Row="1"/>
+		<r:KeyCalc x:Name="Calc_Divide" Content="/" Grid.Column="10" Grid.Row="1"/>
+
+		<r:KeyCalc x:Name="Calc_Percentage" Content="%" Grid.Column="7" Grid.Row="2"/>
+		<r:KeyCalc x:Name="Calc_Sqrt" Content="" Grid.Column="8" Grid.Row="2"/>
+		<r:KeyCalc x:Name="Calc_Equal" Content="=" Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="2"/>
+	</Grid>
+</UserControl>

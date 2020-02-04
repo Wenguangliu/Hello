@@ -1,0 +1,17 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:r="clr-namespace:Layouts"
+	mc:Ignorable="d"
+	x:Name="EditFx"
+	x:Class="Layouts.EditFx"
+	d:DesignWidth="230" d:DesignHeight="130" WindowStyle="None">
+	<Grid x:Name="LayoutRoot">
+	<fill><Image source="Images\preview_a.png" repeat="10,10"/></fill>
+    	<TextBox x:Name="FxEdit" Margin="10,10,10,45" FontSize="15" />
+		<r:SimpleKey x:Name="OK" Content="OK" Margin="10" Width="80" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+		<r:SimpleKey x:Name="Cancel" Content="Cancel" Margin="10" Width="80" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+	</Grid>
+</Window>

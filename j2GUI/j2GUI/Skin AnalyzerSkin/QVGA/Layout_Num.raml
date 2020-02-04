@@ -1,0 +1,64 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:r="clr-namespace:Layouts"
+	mc:Ignorable="d"
+	x:Class="Layouts.Layout_Num"
+	d:DesignWidth="240" d:DesignHeight="160" FontSize="20">
+
+	<Grid x:Name="LayoutRoot">
+			<UniformGrid Margin="0,0,0,0" Rows="4">
+				<UniformGrid Margin="0,1,0,0" Columns="10">
+					<r:SimpleKey x:Name="Key_1" Content="1" />
+					<r:SimpleKey x:Name="Key_2" Content="2" />
+					<r:SimpleKey x:Name="Key_3" Content="3" />
+					<r:SimpleKey x:Name="Key_4" Content="4" />
+					<r:SimpleKey x:Name="Key_5" Content="5" />
+					<r:SimpleKey x:Name="Key_6" Content="6" />
+					<r:SimpleKey x:Name="Key_7" Content="7" />
+					<r:SimpleKey x:Name="Key_8" Content="8" />
+					<r:SimpleKey x:Name="Key_9" Content="9" />
+					<r:SimpleKey x:Name="Key_0" Content="0" />
+				</UniformGrid>
+				<UniformGrid Margin="0,1,0,0" Columns="9">
+					<r:SimpleKey x:Name="Symbol_1" Content="."/>
+					<!--<r:SimpleKey x:Name="Symbol_2" Content=","/>-->
+					<r:SimpleKey x:Name="Symbol_3" Content=":"/>
+					<r:SimpleKey x:Name="Symbol_4" Content=";"/>
+					<r:SimpleKey x:Name="Symbol_5" Content="?"/>
+					<r:SimpleKey x:Name="Symbol_6" Content="!"/>
+					<r:SimpleKey x:Name="Symbol_7" Content="&quot;"/>
+					<r:SimpleKey x:Name="Symbol_8" Content="'"/>
+					<r:SimpleKey x:Name="Symbol_9" Content="&amp;"/>
+					<r:SimpleKey x:Name="Symbol_10" Content="@"/>
+				</UniformGrid>  
+        <UniformGrid Margin="0,1,0,0" Columns="9">
+          <r:SimpleKey x:Name="Symbol_11" Content="+"/>
+          <r:SimpleKey x:Name="Symbol_12" Content="-"/>
+          <r:SimpleKey x:Name="Symbol_13" Content="*"/>
+          <r:SimpleKey x:Name="Symbol_14" Content="/"/>  
+          <r:SimpleKey x:Name="Symbol_18" Content="("/>
+          <r:SimpleKey x:Name="Symbol_19" Content=")"/>          
+          <r:SimpleKey x:Name="Symbol_20" Content="%"/>
+          <r:SimpleKey x:Name="Symbol_21" Content="$"/>                
+          <r:KeyFunc x:Name="Func_Back">
+            <Image Source="Images\Back.png" Stretch="None"/>
+          </r:KeyFunc>
+        </UniformGrid>
+				<Grid Margin="0,1,0,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.17*"/>						
+						<ColumnDefinition Width="0.59*"/>
+						<ColumnDefinition Width="0.12*"/>
+						<ColumnDefinition Width="0.12*"/>						
+					</Grid.ColumnDefinitions>
+					<r:KeyFuncTxt x:Name="Layout_Text"  Content="ABC" Grid.Column="0"/>
+          <Button x:Name="Key_Space" Grid.Column="1"/>
+          <r:SimpleKey x:Name="Key_Comma" Grid.Column="2"/>
+          <r:SimpleKey x:Name="Key_Dot" Grid.Column="3"/>  
+				</Grid>
+			</UniformGrid>
+	</Grid>
+</UserControl>

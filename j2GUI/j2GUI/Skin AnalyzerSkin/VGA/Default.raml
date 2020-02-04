@@ -1,0 +1,78 @@
+<application  DisplayWidth="240" DisplayHeight="320" colorMask="#FFFFFF">
+
+ <Defaults>
+
+  <!-- Preddefined Buttons -->
+  <Button x:Name="r:PreviewKey" Margin="0,0,0,0" source="Images\btn_dark_push.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn.png" repeat="12,16" /></Fill>
+    <Label rect="0,0,0,0" Size="24" color="#000000" textstyle="aliased,medium,center"/>
+  </Button>
+
+  <Button x:Name="r:SmileyKey" Margin="0,0,0,0" source="Images\btn.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+  </Button>
+
+  <Button x:Name="r:CalcDisplay" Margin="0">
+    <Fill><Image source="Images\Display.png" repeat="55,17"/></Fill>
+    <Label Margin="1" Size="18" color="#404040" HorizontalContentAlignment="Right" VerticalContentAlignment="Top"/>
+    <Label x:Name="DisplayW" Margin="2" Size="9" color="#606060" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"/>
+    <Label x:Name="DisplayM" Margin="2" Size="9" color="#606060" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom"/>
+    <Label x:Name="LastOperand" Margin="2" Size="9" color="#606060" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+  </Button>
+
+  <Button x:Name="r:KeyFX" Margin="0" source="Images\btn.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16"/></Fill>
+    <Image x:Name="Icon" Source="Images\plus.png" flags="center"/>
+    <Label Margin="5,3" Size="11" Visibility="Hidden" color="#404040" textstyle="aliased,wordbreak"/>
+  </Button>
+
+  <Button x:Name="r:KeyFunc" source="Images\btn_blue.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+  </Button>
+
+  <Button x:Name="r:GrayKeyFunc" source="Images\btn_dark.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+  </Button>
+
+  <r:KeyFunc x:Name="r:KeyFuncTxt">
+    <Label Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Size="15" color="#FFFFFF" shadow="#909090" textstyle="aliased,semibold,center"/>
+  </r:KeyFunc>
+
+  <Button x:Name="r:KeyCalc" source="Images\btn_blue.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+    <Label Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Size="17" color="#FFFFFF" shadow="#909090" textstyle="aliased,semibold,center"/>
+  </Button>
+
+  <Button x:name="r:SimpleKey" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" source="Images\btn.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+    <Label Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Size="18" color="#000000" textstyle="aliased,medium,center">
+        <Font x:Name="Disabled" Size="18" color="#909090" textstyle="aliased,medium,center"/>
+    </Label>
+  </Button>
+
+  <Button Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" source="Images\btn.png" repeat="12,16">
+    <Fill x:Name="Pressed"><Image source="Images\btn_dark_push.png" repeat="12,16" /></Fill>
+    <Label Margin="0,10,0,3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Size="19" color="#000000" textstyle="aliased,semibold,centerh,bottom">
+        <Font x:Name="Disabled" Size="19" color="#909090" textstyle="aliased,semibold,centerh,bottom"/>
+    </Label>
+    <Label x:Name="small" Margin="0,3,0,0" Height="9" HorizontalAlignment="Center" VerticalAlignment="Top" Size="10" color="#505050" textstyle="aliased,center" />
+  </Button>
+                                   
+ </Defaults>
+	
+
+ <!-- #include "PageContainer.raml"-->
+ <!-- #include "Preview_KeyList.raml"-->
+ <!-- #include "EditFx.raml"-->
+ <!-- #include "Layout_Text.raml"-->
+ <!-- #include "Layout_Num.raml"-->
+ <!-- #include "Layout_FX.raml"-->
+ <!-- #include "Layout_Calc.raml"-->
+ <!-- #include "Layout_Navigation.raml"-->
+ <!-- #include "Layout_Text_L.raml"-->
+ <!-- #include "Layout_Num_L.raml"-->
+ <!-- #include "Layout_FX_L.raml"-->
+ <!-- #include "Layout_Calc_L.raml"-->
+ <!-- #include "Layout_Navigation_L.raml"-->
+ <!-- #include "MainWindow.raml"-->
+</application>

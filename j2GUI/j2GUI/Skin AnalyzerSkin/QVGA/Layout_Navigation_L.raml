@@ -1,0 +1,57 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:r="clr-namespace:Layouts"
+	mc:Ignorable="d"
+	x:Class="Layouts.Layout_Navigation_L"
+	d:DesignWidth="240" d:DesignHeight="120" FontSize="14">
+	<Grid x:Name="LayoutRoot">
+		<Grid Margin="0,0,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.8*"/>
+				<ColumnDefinition Width="0.2*"/>
+			</Grid.ColumnDefinitions>
+        <Grid Margin="0,1,0,0" x:Name="AAAAA">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="0.27*"/>
+            <RowDefinition Height="0.27*"/>
+            <RowDefinition Height="0.46*"/>
+          </Grid.RowDefinitions>
+          <UniformGrid x:Name="Copy_Paste" Columns="3" Grid.Row="0" VerticalAlignment="Top">
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_Copy" Content="Copy" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_Cut" Content="Cut" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_Paste" Content="Paste" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    			  </UniformGrid>	
+    			  <UniformGrid x:Name="Sel_Delete" Columns="3" Grid.Row="1" VerticalAlignment="Top">
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_SelectAll" Content="Select all" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_Del" Content="Delete" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    				  <r:SimpleKey Margin="1,0,0,0" x:Name="Key_Back" Content="BkSp" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    			  </UniformGrid>	
+    			  <UniformGrid x:Name="Left_Right" Columns="4" Grid.Row="2" VerticalAlignment="Top">
+    				  <r:GrayKeyFunc Margin="1,0,0,0" x:Name="Key_Left">
+    					  <Image Source="Images\arrow_left.png" Stretch="None"/>
+    				  </r:GrayKeyFunc>		
+    				  <r:GrayKeyFunc Margin="1,0,0,0" x:Name="Key_Up">
+    					  <Image Source="Images\arrow_up.png" Stretch="None"/>
+    				  </r:GrayKeyFunc>
+    				  <r:GrayKeyFunc Margin="1,0,0,0" x:Name="Key_Down">
+    					  <Image Source="Images\arrow_down.png" Stretch="None"/>
+    				  </r:GrayKeyFunc>
+    				  <r:GrayKeyFunc Margin="1,0,0,0" x:Name="Key_Right">
+    					  <Image Source="Images\arrow_right.png" Stretch="None" />
+    				  </r:GrayKeyFunc>
+    			  </UniformGrid>	
+    		</Grid>
+			<UniformGrid x:Name="Lay_Buttons" Margin="0,1,0,0" Rows="4" Grid.Column="1">
+				<r:KeyFuncTxt Margin="1,0,0,0" x:Name="Layout_Text"/>
+				<r:KeyFuncTxt Margin="1,0,0,0" x:Name="Layout_Num"/>
+				<r:KeyFuncTxt Margin="1,0,0,0" x:Name="Layout_FX"/>
+				<r:KeyFunc Margin="1,0,0,0" x:Name="Layout_Calc">
+					<Image Source="Images\Calc.png" Stretch="None"/>
+				</r:KeyFunc>
+			</UniformGrid>	
+		</Grid>
+	</Grid>
+</UserControl>
