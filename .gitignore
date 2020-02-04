@@ -12,7 +12,7 @@ cscope.*
 Makefile
 *.dfn
 *.wsp
-*.prject
+*.project
 *.pjt
 *.psp
 *.sbl
@@ -20,3 +20,11 @@ Makefile
 /**/reports
 /**/wgt
 *.swp
+*.org
+*.def
+/**/obj
+*.csdproj 
+*.csproj 
+/**/bin
+*.resx
+*.rtf
